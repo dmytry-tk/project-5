@@ -1,0 +1,2 @@
+(this.webpackJsonpprodam=this.webpackJsonpprodam||[]).push([[0],[,function(n,i,e){n.exports=e(2)},function(n,i,e){"use strict";e.r(i);e(3);var o=e(0),c=e.n(o);c()(".header-profile .profile-img").click((function(){c()(".main-menu-container").toggleClass("active")})),c()(".main-menu-container .overflow").click((function(){c()(".main-menu-container").removeClass("active")}))},function(n,i,e){}],[[1,1,2]]]);
+//# sourceMappingURL=main.4701df6f.chunk.js.map
