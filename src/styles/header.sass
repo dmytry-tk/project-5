@@ -1,10 +1,12 @@
 .header-mobile
     padding: 10px 15px 5px
+    +hmax(720)
+        padding: 10px 10px 0px
+    +rmin(900)
+        display: none
     .header-profile
         display: flex
         align-items: center
-        +rmin(900)
-            display: none
         .profile-img
             .img
                 width: 45px
@@ -18,5 +20,7 @@
             &::first-letter
                 color: $current
     .add-link
-        margin-top: 15px
-        margin-bottom: 10px
+        margin-top: 5px
+        margin-bottom: 5px
+        +rmax(720)
+            margin: 7px 0

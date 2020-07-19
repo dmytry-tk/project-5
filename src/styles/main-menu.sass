@@ -1,5 +1,4 @@
 .main-menu-container
-    height: 100%
     .overflow
         background-color: rgba(255,255,255,.5)
         position: fixed
@@ -17,46 +16,54 @@
         .main-menu
             transform: translateX(0%)!important
             transition: 0.35s all ease
+            height: 100vh
         .overflow
             opacity: 1
             visibility: visible
             transition: 0.35s all ease
     .main-menu
         width: 280px
-        padding: 25px 15px
-        border-right: 1px solid #4C4C4C
+        padding: 15px 10px
         display: flex
         justify-content: space-between
         flex-direction: column
         position: fixed
         top: 0
         left: 0
-        height: 100vh
+        max-height: 100%
         z-index: 20
-        background-color: black
+        background: radial-gradient(231.47% 49.37% at 50% 50%, #4D4D4D 0%, #2F2F2F 39.58%, #000000 100%)
         transform: translateX(-100%)
         +rmin(900)
             position: static
             background-color: transparent
             width: 320px
+            background: transparent
             padding: 25px 15px
+            height: 100%
             transform: translateX(0%)!important
         .menu-header
             .logo
                 margin-bottom: 45px
+                +rmax(900)
+                    display: none
                 .img
                     width: 150px
             .balance-container
                 border-radius: 10px
                 background: radial-gradient(50% 743.88% at 50% 50%, #4D4D4D 0%, #000000 100%)
-                padding: 15px 30px
-                font-size: 20px
+                padding: 15px 15px
+                font-size: 18px
                 font-weight: 500
+                text-align: center
+                .gray
+                    opacity: 0.5
+                    font-weight: lighter
         .menu-nav
             height: 100%
             margin-top: 30px
             margin-bottom: 30px
-            overflow-y: auto
+            overflow-y: hidden
             padding-left: 15px
             display: flex
             flex-direction: column
@@ -64,13 +71,11 @@
                 padding-left: 30px
             .item
                 padding: 15px 0
-                color: #999999
+                color: white
                 font-size: 20px
                 font-weight: bold
                 +rmin(900)
-                    padding: 20px 0
-                &:hover
-                    text-decoration: underline
+                    padding: 15px 0
         .menu-footer
             .profile
                 display: flex

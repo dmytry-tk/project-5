@@ -21,6 +21,14 @@ $current: #7FFF00
     @media only screen and (min-width: $width+ "px")
         @content
 
+=hmax($height)
+    @media only screen and (max-height: $height+ "px")
+        @content
+
+=hmin($height)
+    @media only screen and (min-height: $height+ "px")
+        @content
+
 =tr($tr:0.35)
     transition: $tr+s all ease
 
